@@ -1,11 +1,12 @@
-import React, {
+import {
   createContext,
   useContext,
   useReducer,
   useEffect,
   type ReactNode,
+  type Dispatch,
 } from 'react';
-import type { HarvestingState, HarvestingAction, CapitalGainsData, Holding } from '../types';
+import type { HarvestingState, HarvestingAction } from '../types';
 import { fetchCapitalGains } from '../api/capitalGains';
 import { fetchHoldings } from '../api/holdings';
 
@@ -58,7 +59,7 @@ function harvestingReducer(state: HarvestingState, action: HarvestingAction): Ha
 
 interface HarvestingContextValue {
   state: HarvestingState;
-  dispatch: React.Dispatch<HarvestingAction>;
+  dispatch: Dispatch<HarvestingAction>;
   refetchGains: () => void;
   refetchHoldings: () => void;
 }

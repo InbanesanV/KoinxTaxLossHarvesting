@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { useHoldings } from '../hooks/useHoldings';
 import { useHarvesting } from '../context/HarvestingContext';
 import { HoldingsRow } from './HoldingsRow';

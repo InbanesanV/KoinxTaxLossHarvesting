@@ -1,4 +1,3 @@
-import React from 'react';
 import { formatINR } from '../utils/formatCurrency';
 
 interface SavingsBannerProps {

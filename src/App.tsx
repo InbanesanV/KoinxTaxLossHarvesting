@@ -1,4 +1,3 @@
-import React from 'react';
 import { useCapitalGains } from './hooks/useCapitalGains';
 import { useHarvesting } from './context/HarvestingContext';
 import { CapitalGainsCard } from './components/CapitalGainsCard';

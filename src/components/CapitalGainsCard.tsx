@@ -1,4 +1,3 @@
-import React from 'react';
 import { formatINR } from '../utils/formatCurrency';
 import { CardSkeleton } from './Loader';
 
@@ -72,7 +71,6 @@ export function CapitalGainsCard({
     ? 'bg-[var(--card-bg-after)] border-blue-500/30'
     : 'bg-[var(--card-bg-pre)] border-[var(--border-color)]';
 
-  const sectionBg = isAfter ? 'bg-white/5' : 'bg-[var(--bg-tertiary)]';
   const dividerColor = isAfter ? 'border-white/20' : 'border-[var(--border-color)]';
   const headingColor = isAfter ? 'text-white' : 'text-[var(--text-primary)]';
 

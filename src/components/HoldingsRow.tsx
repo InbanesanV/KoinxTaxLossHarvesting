@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import type { Holding } from '../types';
 import { formatINR, formatHolding, formatPrice, formatGain } from '../utils/formatCurrency';
 import { getHoldingId } from '../utils/calculations';

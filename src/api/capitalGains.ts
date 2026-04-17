@@ -8,7 +8,7 @@ const MOCK_CAPITAL_GAINS: CapitalGainsAPIResponse = {
 };
 
 export async function fetchCapitalGains(): Promise<CapitalGainsAPIResponse> {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     setTimeout(() => {
       // Simulate occasional errors (uncomment to test error state)
       // if (Math.random() < 0.1) {

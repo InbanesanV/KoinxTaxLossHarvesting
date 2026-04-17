@@ -254,7 +254,7 @@ const MOCK_HOLDINGS: Holding[] = [
 ];
 
 export async function fetchHoldings(): Promise<Holding[]> {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     setTimeout(() => {
       // Simulate occasional errors (uncomment to test error state)
       // if (Math.random() < 0.1) {
