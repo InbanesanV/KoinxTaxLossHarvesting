@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { Holding } from '../types';
-import { formatINR, formatHolding, formatPrice, formatGain } from '../utils/formatCurrency';
+import { _formatINR, formatHolding, formatPrice, formatGain } from '../utils/formatCurrency';
 import { getHoldingId } from '../utils/calculations';
 
 interface HoldingsRowProps {
